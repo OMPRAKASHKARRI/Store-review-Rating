@@ -20,6 +20,6 @@ const stores = await Store.create([
   { name: 'Northstar Home Goods Collective', email: 'team@northstar.demo', address: '18 Market Square, Seattle', owner: ownerTwo._id },
   { name: 'Cedar House Kitchen Supply', email: 'hello@cedarhouse.demo', address: '9 Cedar Lane, Portland', owner: ownerThree._id }
 ]);
-await Rating.create([{ value: 5, user: user._id, store: stores[0]._id }, { value: 4, user: admin._id, store: stores[1]._id }]);
+await Rating.create([{ value: 5, user: user._id, store: stores[0]._id }]);
 console.log('Seeded demo accounts and stores. Password for all accounts: DemoPass!1');
 process.exit(0);
